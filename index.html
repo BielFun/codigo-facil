@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#100d20">
+<title>Curso • Crie e publique seu curso HTML</title>
+<style>
+:root{--bg:#0b0a14;--panel:#151329;--panel2:#201a3b;--text:#f6f3ff;--muted:#bcb5d8;--purple:#a78bfa;--pink:#fb71c8;--cyan:#68f0e5;--line:#383052}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at top,#29204b 0%,var(--bg) 58%);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.65}
+header{text-align:center;padding:44px 17px 32px;border-bottom:1px solid var(--line)}
+.eyebrow{color:var(--cyan);font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;font-weight:850}
+h1{font-size:clamp(2rem,7vw,3.4rem);line-height:1.1;max-width:850px;margin:14px auto}
+.gradient{background:linear-gradient(90deg,var(--cyan),var(--purple),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
+header p{max-width:700px;margin:12px auto;color:var(--muted)}
+main{max-width:900px;margin:auto;padding:22px 14px 55px}
+.notice,.tip,.warning{border-radius:13px;padding:14px 16px;margin:14px 0}
+.notice{background:#17162a;border:1px solid #514572;border-left:4px solid var(--cyan)}
+.tip{background:#102a2a;border:1px solid #285b58;color:#dffffb}
+.warning{background:#302116;border:1px solid #704b2a;color:#ffe6c6}
+.module{background:linear-gradient(145deg,rgba(29,25,54,.98),rgba(17,15,31,.98));border:1px solid var(--line);border-radius:20px;padding:21px;margin:18px 0;box-shadow:0 12px 30px #0002}
+.number{display:inline-block;background:linear-gradient(90deg,var(--cyan),var(--purple));color:#100d20;font-weight:900;font-size:.78rem;padding:4px 10px;border-radius:999px}
+h2{font-size:1.45rem;line-height:1.25;margin:13px 0 9px}
+h3{font-size:1.02rem;color:var(--cyan);margin:22px 0 7px}
+p,li{color:#ddd8f0}li{margin:7px 0}ol,ul{padding-left:23px}
+code{background:#080711;border:1px solid #39314f;border-radius:5px;padding:2px 5px;color:#a9fff4;overflow-wrap:anywhere}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#080711;border:1px solid #39314f;border-radius:12px;padding:14px;color:#b2fff6;font-size:.88rem;line-height:1.55}
+.action{display:inline-block;margin:9px 0 5px;background:linear-gradient(100deg,#9b7bff,#df73d5);color:#100d20;text-decoration:none;font-weight:850;padding:12px 17px;border-radius:12px;box-shadow:0 5px 18px #0003}
+.action:focus{outline:3px solid var(--cyan);outline-offset:3px}
+.subtle{font-size:.9rem;color:var(--muted)}
+.pill{display:inline-block;border:1px solid #514572;border-radius:999px;padding:4px 10px;color:#ddd1ff;font-size:.8rem;margin:4px}
+footer{text-align:center;color:#9f99bb;padding:26px 14px;border-top:1px solid var(--line);font-size:.9rem}
+</style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">CURSO DIGITAL • PASSO A PASSO</div>
+  <h1>Crie seu curso em HTML e publique na <span class="gradient">internet</span></h1>
+  <p>Aprenda na ordem certa: primeiro monte o HTML do curso, depois publique o site e, por fim, prepare seu produto digital para apresentar e vender.</p>
+  <span class="pill">Iniciante</span><span class="pill">HTML</span><span class="pill">GitHub Pages</span><span class="pill">Produto digital</span>
+</header>
+<main>
+  <div class="notice"><strong>Como funciona:</strong> este curso é principalmente para leitura. Os dois botões levam a sites externos: ChatGPT para ajudar a criar seu HTML e GitHub para publicar o arquivo. O curso não garante renda nem enriquecimento rápido.</div>
+
+  <section class="module" id="criar-html">
+    <span class="number">ETAPA 1</span>
+    <h2>Crie o HTML do seu curso</h2>
+    <p>Primeiro, peça ao ChatGPT para criar um arquivo HTML completo. Você pode adaptar o prompt abaixo ao tema do seu curso. Depois, salve o resultado com o nome <code>index.html</code>.</p>
+    <a class="action" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Crie seu HTML aqui ↗</a>
+    <p class="subtle">O botão abre o ChatGPT. Copie o prompt abaixo e cole na conversa para pedir seu HTML.</p>
+    <h3>Prompt para copiar e colar no ChatGPT</h3>
+    <pre>Faz um jogo HTML que nele tu não vai poder clicar em nada. Vai ser um jogo HTML só pra tu ver um texto. E aí, tipo, vai ter... qual que é o nome? É, eu esqueci. Vai ter vários textos. O primeiro vai ser como ensinando a fazer um site no GitHub.com e tu vai ter que fazer o tutorial, tipo criar novo repositório, colocar o HTML lá. E aí o segundo vai ser pedir um HTML pra fazer isso que eu tô falando mesmo agora, pra colocar no site novo lá e pra repassar. E aí tu faz tudo decoradinho o HTML com essas coisas que eu falei e tu faz isso como se fosse um curso, só de texto mesmo, ensinando a fazer um outro curso só com HTML, fazendo essa mesma coisa, que a pessoa vai comprar o curso, vai ver o que que tem no curso e o que que vai ter no curso, ensinando a fazer um site pra fazer outro curso pra pessoa comprar outro curso. E aí a pessoa vai ficar rica. E o curso é como ficar rico rápido. Faz aí o meu HTML rápido.</pre>
+    <div class="tip"><strong>Dica:</strong> depois que o ChatGPT gerar o código, copie o HTML inteiro. Se estiver usando um editor no celular, crie um arquivo chamado <code>index.html</code> e cole o código nele. Confira o resultado antes de publicar.</div>
+  </section>
+
+  <section class="module" id="criar-site">
+    <span class="number">ETAPA 2</span>
+    <h2>Crie seu site no GitHub</h2>
+    <p>Agora que você tem o arquivo <code>index.html</code>, publique-o com o GitHub Pages. Para um site estático simples, você não precisa contratar hospedagem.</p>
+    <a class="action" href="https://github.com/" target="_blank" rel="noopener noreferrer">Crie seu site aqui ↗</a>
+    <h3>Passo a passo para publicar</h3>
+    <ol>
+      <li>Acesse o GitHub e entre na sua conta ou crie uma conta seguindo as regras de idade e cadastro da plataforma.</li>
+      <li>Crie um repositório novo (<em>New repository</em>) com um nome, por exemplo <code>meu-curso-html</code>.</li>
+      <li>Para começar, deixe o repositório público. Lembre-se de que arquivos públicos podem ser vistos e copiados por outras pessoas.</li>
+      <li>Dentro do repositório, escolha <em>Add file</em> e depois <em>Upload files</em> para enviar o arquivo <code>index.html</code>.</li>
+      <li>Confirme o envio com <em>Commit changes</em>.</li>
+      <li>Abra <em>Settings</em> e entre em <em>Pages</em>.</li>
+      <li>Na área de publicação, selecione a branch <code>main</code> e a pasta <code>/(root)</code>, depois salve.</li>
+      <li>Aguarde alguns minutos e abra o endereço que o GitHub Pages mostrar. Teste o site no celular e no computador.</li>
+    </ol>
+    <div class="warning"><strong>Atenção:</strong> um site público do GitHub Pages não é uma área privada para compradores. Não coloque senhas, dados pessoais ou informações de pagamento no HTML. Para vender acesso restrito, você precisará de uma solução apropriada para isso.</div>
+  </section>
+
+  <section class="module" id="organizar-curso">
+    <span class="number">ETAPA 3</span>
+    <h2>Organize o conteúdo do seu curso</h2>
+    <p>Antes de tentar vender, confira se o curso realmente ensina algo útil. Uma página bonita ajuda, mas o principal é o conteúdo.</p>
+    <ol>
+      <li><strong>Apresentação:</strong> explique para quem é o curso e o que a pessoa aprenderá.</li>
+      <li><strong>Aulas:</strong> separe o conteúdo em módulos curtos, do básico ao avançado.</li>
+      <li><strong>Exemplos:</strong> mostre passos claros e exemplos que o aluno possa acompanhar.</li>
+      <li><strong>Resumo:</strong> finalize com uma recapitulação e próximos passos.</li>
+      <li><strong>Revisão:</strong> corrija erros e confira todos os links antes de divulgar.</li>
+    </ol>
+    <h3>Modelo de uma aula em HTML</h3>
+    <pre>&lt;section class="module"&gt;
+  &lt;h2&gt;Título da aula&lt;/h2&gt;
+  &lt;p&gt;Explique aqui o que o aluno vai aprender.&lt;/p&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Primeiro passo&lt;/li&gt;
+    &lt;li&gt;Segundo passo&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/section&gt;</pre>
+    <p>Você pode repetir essa estrutura para criar mais aulas e adaptar as cores e os estilos ao tema do curso.</p>
+  </section>
+
+  <section class="module" id="preparar-venda">
+    <span class="number">ETAPA 4</span>
+    <h2>Prepare o curso para vender</h2>
+    <p>Você pode ensinar outras pessoas a criar seus próprios cursos e sites. Deixe claro o que o comprador recebe e não prometa que ele vai ficar rico rapidamente.</p>
+    <h3>Antes de anunciar</h3>
+    <ul>
+      <li>Escolha um nome claro e um público específico.</li>
+      <li>Liste todos os módulos e explique o formato de entrega.</li>
+      <li>Defina um preço e informe as condições da compra de forma transparente.</li>
+      <li>Use uma plataforma de pagamento confiável e confira as taxas e regras.</li>
+      <li>Respeite direitos autorais, regras de consumo e obrigações fiscais aplicáveis.</li>
+      <li>Se for menor de idade, confira as exigências da plataforma e peça ajuda a um responsável.</li>
+    </ul>
+    <div class="tip"><strong>Exemplo de descrição honesta:</strong> “Aprenda a criar uma página HTML e publicá-la no GitHub Pages. Curso introdutório em texto, com instruções para iniciantes. A prática e os resultados variam; não há promessa de renda.”</div>
+  </section>
+
+  <section class="module" id="proximo-curso">
+    <span class="number">ETAPA 5</span>
+    <h2>Ensine o aluno a criar o próprio curso</h2>
+    <p>O aluno que comprar seu curso pode usar o que aprendeu para escolher um tema, criar aulas originais, montar uma página HTML e divulgar seu produto. Ele não deve precisar recrutar pessoas para que você ganhe dinheiro; a proposta é vender conhecimento útil.</p>
+    <h3>Um caminho responsável</h3>
+    <ol>
+      <li>Escolher um assunto que conheça ou pesquisar para ensiná-lo corretamente.</li>
+      <li>Produzir conteúdo original e revisar as informações.</li>
+      <li>Publicar uma amostra e pedir opiniões.</li>
+      <li>Divulgar sem spam, depoimentos inventados ou promessas de ganhos garantidos.</li>
+      <li>Calcular custos, taxas e receitas para avaliar se as vendas dão lucro.</li>
+    </ol>
+    <div class="warning"><strong>Importante:</strong> não existe método garantido para ficar rico rapidamente. Vender cursos pode gerar renda, mas também pode não gerar vendas. Seja transparente sobre isso.</div>
+  </section>
+
+  <section class="module">
+    <span class="number">RESUMO FINAL</span>
+    <h2>A ordem do seu projeto</h2>
+    <ol>
+      <li>Criar o HTML com ajuda do ChatGPT.</li>
+      <li>Publicar o arquivo no GitHub Pages.</li>
+      <li>Revisar e organizar as aulas.</li>
+      <li>Preparar uma oferta clara e uma forma adequada de pagamento.</li>
+      <li>Ensinar o comprador a criar um curso original e vender seu próprio produto com honestidade.</li>
+    </ol>
+    <p><strong>Pronto!</strong> Siga as etapas na ordem e teste tudo antes de compartilhar seu curso.</p>
+  </section>
+</main>
+<footer>Curso demonstrativo • HTML em um único arquivo • Conteúdo educativo, sem promessa de enriquecimento</footer>
+</body>
+</html>
